@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФудШер - Контакты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🥗</span>
+                <span class="logo-text">FOODSHAR.BY</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">ГЛАВНАЯ</a></li>
+                <li><a href="about.html">О НАС</a></li>
+                <li><a href="volunteers.html">ВОЛОНТЕРАМ</a></li>
+                <li><a href="organizations.html">ОРГАНИЗАЦИЯМ</a></li>
+                <li><a href="contacts.html" class="active">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>КОНТАКТЫ</h1>
+            </div>
+        </section>
+
+        <section class="contacts-section">
+            <div class="container">
+                <div class="contacts-content">
+                    <div class="contact-info">
+                        <h2>Свяжитесь с нами</h2>
+                        <p>Мы всегда рады ответить на ваши вопросы и обсудить возможное сотрудничество.</p>
+
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p><a href="mailto:Foodshar.by@gmail.com">Foodshar.by@gmail.com</a></p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>🌐 Веб-сайт</h3>
+                            <p><a href="" target="_blank">foodshar.by</a></p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>📱 Социальные сети</h3>
+                            <p>Также вы можете отправить нам сообщение в любой соцсети</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <h2>Напишите нам</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Тема</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Выберите тему</option>
+                                    <option value="volunteer">Хочу стать волонтером</option>
+                                    <option value="organization">Представляю организацию</option>
+                                    <option value="question">Общий вопрос</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-large">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ФудШер. Все права защищены.</p>
+            <p>Email: <a href="mailto:Foodshar.by@gmail.com">Foodshar.by@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
