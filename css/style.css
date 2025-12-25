@@ -615,7 +615,107 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* ===== АДАПТИВНОСТЬ ===== */
+.rules-intro {
+    background-color: var(--bg-light);
+}
+
+.intro-box {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(76, 175, 80, 0.05);
+    border-left: 4px solid var(--primary-green);
+    border-radius: 8px;
+}
+
+.intro-box p {
+    margin-bottom: 1rem;
+}
+
+.intro-box p:last-child {
+    margin-bottom: 0;
+}
+
+.rules-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.rule-block {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.rule-block:last-child {
+    border-bottom: none;
+}
+
+.rule-block h2 {
+    color: var(--primary-green);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+}
+
+.rule-block h3 {
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+}
+
+.rule-block ul {
+    margin: 1rem 0 1rem 2rem;
+    line-height: 1.8;
+}
+
+.rule-block li {
+    margin-bottom: 0.5rem;
+}
+
+.rule-block strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.warning {
+    background-color: rgba(255, 152, 0, 0.08);
+    border-left: 4px solid #FF9800;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 6px;
+}
+
+.warning-block {
+    background-color: rgba(244, 67, 54, 0.04);
+    border: 2px solid rgba(244, 67, 54, 0.2);
+    border-radius: 12px;
+    padding: 2rem !important;
+}
+
+.warning-block h2 {
+    color: #D32F2F;
+}
+
+/* Адаптив для правил */
+@media (max-width: 768px) {
+    .rule-block h2 {
+        font-size: 1.6rem;
+    }
+
+    .rule-block h3 {
+        font-size: 1.3rem;
+    }
+
+    .intro-box {
+        padding: 1.5rem;
+    }
+
+    .rule-block ul {
+        margin-left: 1.2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         flex-direction: column;
